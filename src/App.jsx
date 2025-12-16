@@ -15,10 +15,12 @@ function App() {
         <Route path='/' element={<Uploadexcel/>}></Route>
 
         <Route path='/pricetrend' element={<Pricetrend/>}></Route>
-
+        <Route path='/testentry' element={<Testentry/>}></Route>
       </Routes>
     </BrowserRouter>
+    
   )
 }
+
 
 export default App

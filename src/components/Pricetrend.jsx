@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 function Pricetrend() {
-  const [location, setLocation] = useState("Delhi");
+  const [location, setLocation] = useState("");
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [property_type, setPropertyType] = useState("flat")
@@ -62,7 +62,10 @@ function Pricetrend() {
           />
         </div>
         <div className="col-md-2">
-          <select onChange={(e) => setPropertyType(e.target.value)}>
+          <select
+            className="form-select"
+            onChange={(e) => setPropertyType(e.target.value)}
+          >
             <option value="flat">Flat</option>
             <option value="shop">Shop</option>
             <option value="office">Office</option>

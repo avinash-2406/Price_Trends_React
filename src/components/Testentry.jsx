@@ -1,18 +1,18 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react'
 
 function Testentry() {
-    const [user,setUser] = useState({
-        firstname:"",
-        lastname:"",
-        email:""
-    })
+  const [user, setUser] = useState({
+    firstname: "",
+    lastname: "",
+    email: ""
+  })
 
-    const inputHandler = (e) => {
+  const inputHandler = (e) => {
     const { name, value } = e.target;
     setUser(prev => ({ ...prev, [name]: value }));
-    };
+  };
 
-    const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
@@ -40,24 +40,28 @@ function Testentry() {
       alert("Something went wrong");
     }
   };
-    
+
   return (
     <>
-        <div>
-            <form action="" onSubmit={handleSubmit}>
-                <label htmlFor="">Firstname</label>
-                <input type="text" name="firstname" value={user.firstname} onChange={inputHandler} />
-                <br />
-                <label htmlFor="">Lastname</label>
-                <input type="text" name="lastname" value={user.lastname} onChange={inputHandler} />
-                <br />
-                <label htmlFor="">Email</label>
-                <input type="text" name="email" value={user.email} onChange={inputHandler} />
-                <br />
-                <button>Submit</button>
+      <div className='container w-25 b-2'>
+        <form action="" onSubmit={handleSubmit} className='form p-4 border rounded'>
+          <h4>Test Entry</h4>
+          <div className="mb-2 ">
+            <label htmlFor="" className='form-label'>Firstname</label>
+            <input type="text" className='form-control' name="firstname" value={user.firstname} onChange={inputHandler} />
+          </div>
+          <div className="mb-2">
+            <label htmlFor="" className='form-label'>Lastname</label>
+          <input type="text" className='form-control' name="lastname" value={user.lastname} onChange={inputHandler} />
+          </div>
+          <div className="mb-2">
+            <label htmlFor="" className='form-label'>Email</label>
+          <input type="text" className='form-control' s name="email" value={user.email} onChange={inputHandler} />
+          </div>
+          <button className='btn btn-primary '>Submit</button>
 
-            </form>
-        </div>
+        </form>
+      </div>
     </>
   )
 }
