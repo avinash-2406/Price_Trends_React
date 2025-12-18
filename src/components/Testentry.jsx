@@ -43,12 +43,12 @@ function Testentry() {
 
   return (
     <>
-      <div className='container w-25 b-2'>
-        <form action="" onSubmit={handleSubmit} className='form p-4 border rounded'>
-          <h4>Test Entry</h4>
-          <div className="mb-2 ">
+      <div className='container w-25 vh-100 d-flex align-items-center justify-content-center'>
+        <form action="" onSubmit={handleSubmit} className='form p-1 border rounded d-flex flex-column  w-100 align-items-center'>
+          <h4 className='p-2'>Test Entry</h4>
+          <div className="mb-2 p-1">
             <label htmlFor="" className='form-label'>Firstname</label>
-            <input type="text" className='form-control' name="firstname" value={user.firstname} onChange={inputHandler} />
+            <input type="text" className='form-control w-100' name="firstname" value={user.firstname} onChange={inputHandler} />
           </div>
           <div className="mb-2">
             <label htmlFor="" className='form-label'>Lastname</label>
@@ -58,8 +58,9 @@ function Testentry() {
             <label htmlFor="" className='form-label'>Email</label>
           <input type="text" className='form-control' s name="email" value={user.email} onChange={inputHandler} />
           </div>
-          <button className='btn btn-primary '>Submit</button>
-
+          <div className="mt-2 border w-40 ">
+            <button className='btn btn-primary w-100'>Submit</button>
+          </div>
         </form>
       </div>
     </>

@@ -216,7 +216,7 @@ function Pricetrend() {
           <button
             key={m.key}
             type="button"
-            className={`btn ${price_metric === m.key ? "btn-success" : "btn-outline-success"
+            className={`btn ${price_metric === m.key ? "btn-primary" : "btn-outline-primary"
               }`}
             onClick={() => setPriceMetric(m.key)}
           >
