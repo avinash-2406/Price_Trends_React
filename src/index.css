@@ -1,2 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+/* ---- Global UI Enhancements ---- */
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+}
+
+.list-group-item:hover {
+  background-color: #f1f3f5;
+  cursor: pointer;
+}
+
 
