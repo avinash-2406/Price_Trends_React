@@ -12,7 +12,7 @@ import {
   AreaChart,
   Area
 } from "recharts";
-import "./pricetrend.css"
+import "./Pricetrend.css"
 
 
 
