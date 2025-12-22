@@ -1,6 +1,6 @@
 
 import './App.css'
-import Pricetrend from './components/Pricetrend';
+import Pricetrend from './components/pricetrend/Pricetrend';
 import Testentry from './components/Testentry'
 import Uploadexcel from './components/Uploadexcel'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
